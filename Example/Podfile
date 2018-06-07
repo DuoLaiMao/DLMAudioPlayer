@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'DLMAudioPlayer_Example' do
+  pod 'DLMAudioPlayer', :path => '../'
+
+  target 'DLMAudioPlayer_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
