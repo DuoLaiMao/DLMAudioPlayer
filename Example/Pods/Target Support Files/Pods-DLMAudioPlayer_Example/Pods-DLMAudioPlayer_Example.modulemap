@@ -1,0 +1,6 @@
+framework module Pods_DLMAudioPlayer_Example {
+  umbrella header "Pods-DLMAudioPlayer_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - DLMAudioPlayer (0.1.0)
+
+DEPENDENCIES:
+  - DLMAudioPlayer (from `../`)
+
+EXTERNAL SOURCES:
+  DLMAudioPlayer:
+    :path: ../
+
+SPEC CHECKSUMS:
+  DLMAudioPlayer: 8e9c7c59486b4c65d5f10530600392fff60dd857
+
+PODFILE CHECKSUM: 65a66e8112398dd492382a4febc7f454f5af3a2c
+
+COCOAPODS: 1.4.0

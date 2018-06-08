@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1E442CE210AEF417D28400A8 /* DLMAudioPlayer.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = DLMAudioPlayer.podspec; path = ../DLMAudioPlayer.podspec; sourceTree = "<group>"; };
+		1E442CE210AEF417D28400A8 /* DLMAudioPlayer.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DLMAudioPlayer.podspec; path = ../DLMAudioPlayer.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6003F58A195388D20070C39A /* DLMAudioPlayer_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DLMAudioPlayer_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -61,12 +61,12 @@
 		6EDFF8CD4B185AE833D37C83 /* Pods-DLMAudioPlayer_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DLMAudioPlayer_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DLMAudioPlayer_Example/Pods-DLMAudioPlayer_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8A837F8525844C8DDF2BCEDF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		8A837F8525844C8DDF2BCEDF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		913A2CBB116C110EE0B66EE2 /* Pods-DLMAudioPlayer_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DLMAudioPlayer_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-DLMAudioPlayer_Example/Pods-DLMAudioPlayer_Example.release.xcconfig"; sourceTree = "<group>"; };
 		93FD326F087A7DC992E6BE94 /* Pods_DLMAudioPlayer_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DLMAudioPlayer_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1AE408CCB16C0DB605BE7B7 /* Pods_DLMAudioPlayer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DLMAudioPlayer_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC0A2721F07A35F6D9BBA45E /* Pods-DLMAudioPlayer_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DLMAudioPlayer_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DLMAudioPlayer_Tests/Pods-DLMAudioPlayer_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		F0755EEDFFCDBC6633CD7776 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F0755EEDFFCDBC6633CD7776 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */

@@ -1,0 +1,6 @@
+framework module DLMAudioPlayer {
+  umbrella header "DLMAudioPlayer-umbrella.h"
+
+  export *
+  module * { export * }
+}
