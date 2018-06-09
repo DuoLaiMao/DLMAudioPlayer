@@ -10,6 +10,7 @@
 @interface DLMAudioPlayer ()
 @property (strong, nonatomic, readwrite) AVPlayer *player;
 @property (assign, nonatomic, readwrite) NSTimeInterval currentTime;
+@property (assign, nonatomic) id playerObserver;
 
 @end
 
@@ -17,7 +18,7 @@
 
 - (void)dealloc
 {
-    [_player removeTimeObserver:self];
+    [_player removeTimeObserver:self.playerObserver];
     [_player removeObserver:self forKeyPath:@"status"];
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
@@ -98,6 +99,7 @@
 
 - (void)play
 {
+    self.currentTime = 0.f;
     [self.player play];
 }
 
@@ -106,15 +108,17 @@
     [self.player pause];
 }
 
-//- (void)stop
-//{
-//    [self.player pause];
-//    [self setContentUrl:_contentUrl];
-//}
-
 - (BOOL)isPlaying
 {
-    return false;
+    if ([self.player respondsToSelector:@selector(timeControlStatus)]) {
+        return self.player.timeControlStatus == AVPlayerTimeControlStatusPlaying ? true : false;
+    } else {
+        if (self.player.rate == 0.0) {
+            return false;
+        } else {
+            return true;
+        }
+    }
 }
 
 #pragma mark -
@@ -127,14 +131,11 @@
                      options:NSKeyValueObservingOptionNew context:nil];
         
         __weak typeof(self) weakself = self;
-        [_player addPeriodicTimeObserverForInterval:CMTimeMake(1, 2) queue:dispatch_get_main_queue() usingBlock:^(CMTime time) {
+        self.playerObserver = [_player addPeriodicTimeObserverForInterval:CMTimeMake(1, 2) queue:dispatch_get_main_queue() usingBlock:^(CMTime time) {
             __strong typeof(weakself) self = weakself;
             self.currentTime = CMTimeGetSeconds(time);
-            if (self.player.rate == 1.0) {
-                [self playStart];
-            }
+            NSLog(@"currentTime:%.2f", self.currentTime);
         }];
-
     }
     return _player;
 }
